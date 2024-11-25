@@ -1,0 +1,33 @@
+{
+  "name": "scrap-job",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "swc src -d dist --strip-leading-paths &&  bun  ./dist/index.js",
+    "start": "tsx ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@swc/cli": "^0.5.1",
+    "@swc/core": "^1.9.3",
+    "@types/node": "^22.9.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "ora": "^8.1.1",
+    "puppeteer": "^23.9.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6",
+    "puppeteer-extra-plugin-devtools": "^2.4.6",
+    "puppeteer-extra-plugin-minmax": "^1.1.2",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "user-agents": "^1.1.368"
+  }
+}
